@@ -3,7 +3,7 @@
     "friendlyName": "chat ops alarm-contract-testing-description",
     "threshold": {
         "condition": "gte",
-        "value": 90.0
+        "value": 90
     },
     "resourceType": "eks",
     "compositeMetric": {
