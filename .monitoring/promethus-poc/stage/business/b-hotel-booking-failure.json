@@ -9,14 +9,12 @@
             "Percents": []
         }
     },
-    "Id": "003jai7ggrqps",
     "Description": "booking alarm failure",
     "FriendlyName": "Booking Failure",
     "Threshold": {
         "Value": 1,
         "Condition": "eq"
     },
-    "ApplicationName": "Unknown application",
     "Notifications": {
         "OnError": [
             {
