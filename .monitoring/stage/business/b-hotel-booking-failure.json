@@ -9,6 +9,7 @@
             "Percents": []
         }
     },
+	"ApplicationName":"promethus-poc",
     "Description": "booking alarm failure",
     "FriendlyName": "Booking Failure",
     "Threshold": {

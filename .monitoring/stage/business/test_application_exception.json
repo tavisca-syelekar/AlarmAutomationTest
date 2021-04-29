@@ -4,8 +4,8 @@
     "threshold": {
         "condition": "gte",
         "value": 1
-    },
-    "environment": "stage",
+    },	
+	"ApplicationName":"promethus-poc",
     "queryConfiguration": {
         "query": "app_name:promethus_poc AND type:exception",
         "index": "logs-*",
