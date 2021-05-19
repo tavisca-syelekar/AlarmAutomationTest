@@ -1,6 +1,6 @@
 {
     "description": "Booking Failure",
-    "friendlyName": "Booking Failure",
+    "friendlyName": "Booking Failure-cpu-utilizatoin",
     "threshold": {
         "value": 60,
         "condition": "gte"
