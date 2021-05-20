@@ -14,7 +14,7 @@
     "Threshold": {
         "Value": 2,
         "Condition": "gte"
-    }
+    },
     "Notifications": {
         "OnError": [
             {
