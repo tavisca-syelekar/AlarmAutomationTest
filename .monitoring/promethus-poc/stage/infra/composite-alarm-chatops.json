@@ -14,12 +14,12 @@
             "namespace":"containerInsights",
             "name":"pod_cpu_utilization",
             "dimensions":{
-               "clusterName":"eks-travel-stage",
-               "eksNamespace":"nextgen-monotone",
-               "podName":"nextgen-monotone-nextgen-app-deployment"
+               "ClusterName":"eks-travel-stage",
+               "Namespace":"nextgen-monotone",
+               "PodName":"nextgen-monotone-nextgen-app-deployment"
             },
             "aggregate": {
-        		"type": "Average"
+        		"type": "average"
       		},
             "period":"300s"
          },
@@ -29,11 +29,11 @@
             "name":"pod_cpu_reserved_capacity",
             "dimensions":{
                "clusterName":"eks-travel-stage",
-               "eksNamespace":"nextgen-monotone",
+               "namespace":"nextgen-monotone",
                "podName":"nextgen-monotone-nextgen-app-deployment"
             },
             "aggregate": {
-        		"type": "Average"
+        		"type": "average"
       		},
             "period":"300s"
          }
