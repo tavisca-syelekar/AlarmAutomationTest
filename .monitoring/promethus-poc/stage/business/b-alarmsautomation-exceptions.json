@@ -10,7 +10,7 @@
         }
     },
     "Description": "Alarms automation exceptions",
-    "FriendlyName": "Alarms automation exceptions",
+    "FriendlyName": "Alarms automation exception-failure",
     "Threshold": {
         "Value": 2,
         "Condition": "gte"
