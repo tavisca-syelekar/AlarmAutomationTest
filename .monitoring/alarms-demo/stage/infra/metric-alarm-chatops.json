@@ -9,10 +9,10 @@
     "metric": {
         "namespace": "containerInsights",
         "name": "pod_cpu_utilization",
-        "dimensions": {
-            "clusterName": "sample_clustre",
-            "eksNamespace": "utilities",
-            "podName": "test-pod-1245"
+        "dimensions":{
+            "ClusterName":"eks-travel-stage",
+            "Namespace":"nextgen-monotone",
+            "PodName":"nextgen-monotone-nextgen-app-deployment"
         },
         "aggregate": {
             "type": "Average"
