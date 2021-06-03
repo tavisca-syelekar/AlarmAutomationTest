@@ -7,7 +7,7 @@
     },
     "resourceType": "eks",
     "metric": {
-        "namespace": "containerInsights",
+        "namespace": "ContainerInsights",
         "name": "pod_cpu_utilization",
         "dimensions":{
             "ClusterName":"eks-travel-stage",

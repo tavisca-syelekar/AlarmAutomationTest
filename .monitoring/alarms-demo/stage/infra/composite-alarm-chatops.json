@@ -11,7 +11,7 @@
       "metrics":[
          {
             "id":"m1",
-            "namespace":"containerInsights",
+            "namespace":"ContainerInsights",
             "name":"pod_cpu_utilization",
             "dimensions":{
                "ClusterName":"eks-travel-stage",
