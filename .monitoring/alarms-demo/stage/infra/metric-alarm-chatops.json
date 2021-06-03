@@ -1,6 +1,6 @@
 {
-    "description": "Booking Failure",
-    "friendlyName": "Booking Failure-cpu-utilizatoin",
+    "description": "Monotono POD CPU utilization",
+    "friendlyName": "Monotono POD-cpu-utilizatoin",
     "threshold": {
         "value": 60,
         "condition": "gte"
