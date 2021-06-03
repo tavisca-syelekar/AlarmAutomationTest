@@ -25,7 +25,7 @@
          },
          {
             "id":"m2",
-            "namespace":"containerInsights",
+            "namespace":"ContainerInsights",
             "name":"pod_cpu_reserved_capacity",
             "dimensions":{
                "clusterName":"eks-travel-stage",
