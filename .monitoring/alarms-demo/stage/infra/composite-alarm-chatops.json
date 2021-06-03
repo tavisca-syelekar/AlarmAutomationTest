@@ -1,5 +1,5 @@
 {
-   "description":"Composite memory utilization alarm for monotone",
+   "description":"Composite metric memory utilization alarm for monotone",
    "friendlyName":"Composite-metric-monotone-memory-utilization",
    "threshold":{
       "condition":"gte",
