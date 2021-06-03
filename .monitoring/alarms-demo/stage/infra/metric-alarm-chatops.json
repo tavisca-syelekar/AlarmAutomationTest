@@ -3,7 +3,7 @@
     "friendlyName": "Monotono POD-cpu-utilizatoin",
     "threshold": {
         "value": 60,
-        "condition": "gte"
+        "condition": "lte"
     },
     "resourceType": "eks",
     "metric": {
@@ -19,7 +19,7 @@
         },
         "period": "300s"
     },
-    "evaluationPeriods": 5,
+    "evaluationPeriods": 1,
     "treatMissingData": "missing",
     "notifications": {
         "onError": [
