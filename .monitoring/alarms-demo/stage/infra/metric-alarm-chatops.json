@@ -1,6 +1,6 @@
 {
     "description": "Monotono POD CPU utilization",
-    "friendlyName": "Monotono POD-cpu-utilizatoin",
+    "friendlyName": "Monotono POD-cpu-utilization",
     "threshold": {
         "value": 60,
         "condition": "lte"
