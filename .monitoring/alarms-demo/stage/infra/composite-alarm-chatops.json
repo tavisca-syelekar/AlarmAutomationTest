@@ -1,0 +1,58 @@
+{
+   "description":"Composite metric memory utilization alarm for monotone",
+   "friendlyName":"Composite-metric-monotone-memory-utilization",
+   "threshold":{
+      "condition":"gte",
+      "value":70
+   },
+   "resourceType":"eks",
+   "compositeMetric":{
+      "expression":"(m1/m2)*100",
+      "metrics":[
+         {
+            "id":"m1",
+            "namespace":"ContainerInsights",
+            "name":"pod_cpu_utilization",
+            "dimensions":{
+               "ClusterName":"eks-travel-stage",
+               "Namespace":"nextgen-monotone",
+               "PodName":"nextgen-monotone-nextgen-app-deployment"
+            },
+            "aggregate": {
+        		"type": "average"
+      		},
+            "period":"300s"
+         },
+         {
+            "id":"m2",
+            "namespace":"ContainerInsights",
+            "name":"pod_cpu_reserved_capacity",
+            "dimensions":{
+               "clusterName":"eks-travel-stage",
+               "namespace":"nextgen-monotone",
+               "podName":"nextgen-monotone-nextgen-app-deployment"
+            },
+            "aggregate": {
+        		"type": "average"
+      		},
+            "period":"300s"
+         }
+      ]
+   },
+   "evaluationPeriods": 3,
+   "treatMissingData":"missing",
+   "notifications":{
+      "onError":[
+         {
+            "type":"teams_message",
+            "template":"business_fault_failure"
+         }
+      ],
+      "onRecovery":[
+         {
+            "type":"teams_message",
+            "template":"business_fault_recovery"
+         }
+      ]
+   }
+}
