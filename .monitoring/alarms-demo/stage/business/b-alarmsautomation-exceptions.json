@@ -20,13 +20,21 @@
             {
                 "Template": "business_fault_failure",
                 "Type": "teams_message"
-            }
+            },
+			{
+				"type":"twilio_call",
+				"message":"On error"
+			}
         ],
         "OnRecovery": [
             {
                 "Template": "business_fault_recovery",
                 "Type": "teams_message"
-            }
+            },
+			{
+				"type":"twilio_call",
+				"message":"On error"
+			}
         ]
     }
 }
