@@ -25,15 +25,15 @@
         "onError": [
             {
                 "type": "email_notification",
-                "template": "error",
-				"recipient":["syelekar@tavisca.com"]
+                "template": "failure",
+				"recipients":["syelekar@tavisca.com"]
             }
         ],
         "onRecovery": [
             {
                 "type": "email_notification",
                 "template": "recovery",
-				"recipient":["syelekar@tavisca.com"]
+				"recipients":["syelekar@tavisca.com"]
             }
         ]
     }
