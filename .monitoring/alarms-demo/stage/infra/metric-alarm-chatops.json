@@ -24,16 +24,14 @@
     "notifications": {
         "onError": [
             {
-                "type": "email_notification",
-                "template": "failure",
-				"recipients":["syelekar@tavisca.com"]
+                "type": "teams_message",
+                "template": "business_fault_failure"
             }
         ],
         "onRecovery": [
             {
-                "type": "email_notification",
-                "template": "recovery",
-				"recipients":["syelekar@tavisca.com"]
+                "type": "teams_message",
+                "template": "business_fault_recovery"
             }
         ]
     }
