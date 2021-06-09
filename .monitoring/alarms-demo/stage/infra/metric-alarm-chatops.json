@@ -1,0 +1,40 @@
+{
+    "description": "Monotono POD CPU utilization",
+    "friendlyName": "Monotono POD-cpu-utilization",
+    "threshold": {
+        "value": 60,
+        "condition": "gte"
+    },
+    "resourceType": "eks",
+    "metric": {
+        "namespace": "ContainerInsights",
+        "name": "pod_cpu_utilization",
+        "dimensions":{
+            "ClusterName":"eks-travel-stage",
+            "Namespace":"nextgen-monotone",
+            "PodName":"nextgen-monotone-nextgen-app-deployment"
+        },
+        "aggregate": {
+            "type": "Average"
+        },
+        "period": "300s"
+    },
+    "evaluationPeriods": 1,
+    "treatMissingData": "missing",
+    "notifications": {
+        "onError": [
+            {
+                "type": "email_notification",
+                "template": "error",
+				"recipient":["syelekar@tavisca.com"]
+            }
+        ],
+        "onRecovery": [
+            {
+                "type": "email_notification",
+                "template": "recovery",
+				"recipient":["syelekar@tavisca.com"]
+            }
+        ]
+    }
+}
