@@ -25,13 +25,13 @@
         "onError": [
             {
                 "type": "teams_message",
-                "template": "business_fault_failure"
+                "template": "cpu_warning"
             }
         ],
         "onRecovery": [
             {
                 "type": "teams_message",
-                "template": "business_fault_recovery"
+                "template": "cpu_recovery"
             }
         ]
     }
