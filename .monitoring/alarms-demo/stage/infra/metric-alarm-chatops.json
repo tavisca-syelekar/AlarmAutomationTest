@@ -9,11 +9,6 @@
     "metric": {
         "namespace": "ContainerInsights",
         "name": "pod_cpu_utilization",
-        "dimensions":{
-            "ClusterName":"eks-travel-stage",
-            "Namespace":"nextgen-monotone",
-            "PodName":"nextgen-monotone-nextgen-app-deployment"
-        },
         "aggregate": {
             "type": "Average"
         },
