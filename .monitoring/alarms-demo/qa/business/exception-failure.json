@@ -1,0 +1,41 @@
+{
+    "QueryConfiguration": {
+        "Query": "app_name:nextgen_alarms_automation AND type:exception",
+		"Account": "Elastic Search QA Type 1",
+        "Index": "logs-*",
+        "WindowInSeconds": 300,
+        "Aggregate": {
+            "Type": "count",
+            "Field": "*",
+            "Percents": []
+        }
+    },
+    "Description": "Alarms automation exceptions",
+    "FriendlyName": "Alarms automation exception-failure",
+    "Threshold": {
+        "Value": 2,
+        "Condition": "gte"
+    },
+    "Notifications": {
+        "OnError": [
+            {
+                "Template": "business_fault_failure",
+                "Type": "teams_message"
+            },
+			{
+				"type":"twilio_call",
+				"message":"On error"
+			}
+        ],
+        "OnRecovery": [
+            {
+                "Template": "business_fault_recovery",
+                "Type": "teams_message"
+            },
+			{
+				"type":"twilio_call",
+				"message":"On error"
+			}
+        ]
+    }
+}
