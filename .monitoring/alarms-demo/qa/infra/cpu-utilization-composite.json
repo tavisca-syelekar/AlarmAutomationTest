@@ -1,6 +1,6 @@
 {
-   "description":"Composite metric memory utilization alarm for monotone",
-   "friendlyName":"Composite-metric-monotone-memory-utilization",
+   "description":"Composite metric CPU utilization alarms and alert",
+   "friendlyName":"Composite-metric-cpu-utilization",
    "threshold":{
       "condition":"gte",
       "value":70

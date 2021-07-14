@@ -1,6 +1,6 @@
 {
-    "description": "Monotono POD CPU utilization",
-    "friendlyName": "Monotono POD-cpu-utilization",
+    "description": "Nextgen-alarms POD CPU utilization",
+    "friendlyName": "Nextgen-alarms POD-cpu-utilization",
     "threshold": {
         "value": 60,
         "condition": "gte"
