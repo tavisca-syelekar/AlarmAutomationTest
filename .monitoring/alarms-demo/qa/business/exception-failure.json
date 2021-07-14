@@ -14,7 +14,7 @@
     "FriendlyName": "Alarms automation exception-failure",
     "Threshold": {
         "Value": 2,
-        "Condition": "gte"
+        "Condition": "eq"
     },
     "Notifications": {
         "OnError": [
