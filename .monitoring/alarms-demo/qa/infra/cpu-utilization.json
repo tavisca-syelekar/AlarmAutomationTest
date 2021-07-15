@@ -7,7 +7,6 @@
     },
     "resourceType": "eks",
     "metric": {
-        "namespace": "ContainerInsights",
         "name": "pod_cpu_utilization",
         "aggregate": {
             "type": "Average"
