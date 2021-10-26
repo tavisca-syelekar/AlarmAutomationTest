@@ -6,13 +6,6 @@
         "condition": "gte"
     },
     "resourceType": "eks",
-    "metric": {
-        "name": "pod_cpu_utilization",
-        "aggregate": {
-            "type": "Average"
-        },
-        "period": "300s"
-    },
     "evaluationPeriods": 1,
     "treatMissingData": "missing",
     "notifications": {
