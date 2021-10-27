@@ -3,7 +3,7 @@
     "friendlyName": "Nextgen-alarms POD-cpu-utilization",
     "threshold": {
         "value": 60,
-        "condition": "lte"
+        "condition": "gte"
     },
     "resourceType": "eks",
     "metric": {
