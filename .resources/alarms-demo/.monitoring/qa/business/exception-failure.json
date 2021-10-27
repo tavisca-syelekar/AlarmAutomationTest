@@ -13,8 +13,8 @@
     "Description": "Alarms automation exceptions",
     "FriendlyName": "Alarms automation exception-failure",
     "Threshold": {
-        "Value": 2,
-        "Condition": "gte"
+        "Value": 5,
+        "Condition": "lte"
     },
     "Notifications": {
         "OnError": [
