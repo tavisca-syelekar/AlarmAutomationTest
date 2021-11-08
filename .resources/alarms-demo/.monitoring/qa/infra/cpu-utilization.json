@@ -11,7 +11,7 @@
         "aggregate": {
             "type": "Average"
         },
-        "period": "300s1"
+        "period": "300s"
     },
     "evaluationPeriods": 1,
     "treatMissingData": "missing",
