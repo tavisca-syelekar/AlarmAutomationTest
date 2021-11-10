@@ -1,7 +1,7 @@
 {
     "QueryConfiguration": {
         "Query": "app_name:nextgen_alarms_automation AND type:exception",
-		"Account": "Elastic Search QA Type 1",
+		"Account": "travel-app-logging",
         "Index": "logs-*",
         "WindowInSeconds": 300,
         "Aggregate": {
