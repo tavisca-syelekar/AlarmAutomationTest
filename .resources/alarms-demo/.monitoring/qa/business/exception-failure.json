@@ -1,0 +1,41 @@
+{
+    "QueryConfiguration": {
+        "Query": "app_name:nextgen_alarms_automation AND type:exception",
+		"Account": "travel-app-logging",
+        "Index": "logs-*",
+        "WindowInSeconds": 300,
+        "Aggregate": {
+            "Type": "count",
+            "Field": "*",
+            "Percents": []
+        }
+    },
+    "Description": "Alarms automation exceptions",
+    "FriendlyName": "Alarms automation exception-failure",
+    "Threshold": {
+        "Value": 5,
+        "Condition": "gte"
+    },
+    "Notifications": {
+        "OnError": [
+            {
+                "Template": "business_fault_failure",
+                "Type": "teams_message"
+            },
+			{
+				"Type": "twilio_call",
+				"message": "Failure"
+			}
+        ],
+        "OnRecovery": [
+            {
+                "Template": "business_fault_recovery",
+                "Type": "teams_message"
+            },
+			{
+				"Type": "twilio_call",
+				"message": "Recovered"
+			}
+        ]
+    }
+}
